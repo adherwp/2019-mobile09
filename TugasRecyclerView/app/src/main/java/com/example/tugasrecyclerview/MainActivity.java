@@ -1,6 +1,7 @@
 package com.example.tugasrecyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -38,6 +39,6 @@ public class MainActivity extends AppCompatActivity {
         DataTextGambarAdapter mobilAdapter = new DataTextGambarAdapter(listDataTextGambar);
         //set adapter dan layoutmanager
         rvDataTextGambar.setAdapter(mobilAdapter);
-        rvDataTextGambar.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        rvDataTextGambar.setLayoutManager(new GridLayoutManager(this, 2));
     }
 }
